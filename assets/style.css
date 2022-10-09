@@ -5,13 +5,18 @@
 }
 
 /* Element Selectors */
-header{
-    text-align: center;
+header, footer {
     width: 100%;
     background-color: rgb(68, 72, 95) ;
     color: white;
+    z-index: 1;
+}
+
+header{
+    text-align: center;
     position: fixed;
     border-bottom: 5px solid red;
+    margin: auto;
 }
 
 h2 {
@@ -34,32 +39,56 @@ main {
   }
 
 li {
+    text-decoration: none;
+    color: white;
     position: relative;
     font-size: 30px;
     padding-inline: 5px;
 }
 
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+  }
+
 img {
     display: block;
-    padding-top: 50px;
-    position: relative;
-    left: 34%;
+    margin: 20px auto;
 }
 
 form {
     margin: auto;
-    width: 400px;
+    width: 500px;
     padding: 10px;
     border: 5px solid red;
     border-radius: 15px;
     background-color: rgb(68, 72, 95) ;
+    text-decoration: none;
+    color: white;
 }
 input {
     box-sizing: border-box;
     width: 200px;
-    border: 1px solid grey;
+    border: 2px solid grey;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+  }
+
+button {
+    margin: 5px auto;
+    background-color: wheat;
+    height: 30px;
+    width: 60px;
+    border: 1px solid red;
 }
 footer {
+    border-top: 5px solid red;
     position: absolute;
     bottom: 0%;
     right: 0%;
